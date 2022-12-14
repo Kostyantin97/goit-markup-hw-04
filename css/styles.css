@@ -507,19 +507,18 @@ ul {
     justify-content: center;
     border-radius: 50%;
 }
-
 .social-links:hover,
 .social-links:focus {
     background-color:var(--accent-color);
 }
 
-.social-icon {
-    fill: var(--color-social-icon);
+.social-links:hover .social-icon,
+.social-links:focus .social-icon {
+    fill: var(--accent-color-logo);
 }
 
-.social-icon:hover,
-.social-icon:focus {
-    fill: var(--accent-color-logo);
+.social-icon {
+    fill: var(--color-social-icon);
 }
 
 /* title-clients */
@@ -559,8 +558,8 @@ ul {
     fill: var(--color-social-icon);
 }
 
-.client-logo:hover,
-.client-logo:focus {
+.client-border:hover .client-logo,
+.client-border:focus .client-logo {
     fill: var(--accent-color);
 }
 
