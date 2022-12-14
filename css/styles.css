@@ -227,18 +227,15 @@ ul {
     letter-spacing: 0.02em;
     text-decoration: none;
     margin-right: 40px;
-    margin-bottom: 32px;
     margin-top: 32px;
-
+    margin-bottom: 32px;
 }
 
 .icon-link-email {
     fill: var(--secondary-text-color);
     width: 16px;
     height: 12px;
-    margin-top: 32px;
     margin-right: 10px;
-    margin-bottom: 32px;
 }
 
 .link-email:hover {
@@ -286,8 +283,9 @@ ul {
 /* section-service */
 
 .section-service {
-    background-color:var(--footer-background-color);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)), url(../images/hero-image.jpg);
+    background-color: var(--footer-background-color);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
+    url(../images/hero-image.jpg);
     background-size: cover;
     background-position: center;
     max-width: 1600px;
@@ -489,7 +487,7 @@ ul {
     font-size: 16px;
     line-height: 1,18;
     letter-spacing: 0.03em;
-    margin-bottom: 0;
+    margin-bottom: 16px;
 }
 
 .employee-contacts {
@@ -569,11 +567,14 @@ ul {
 
 /* section-page-footer */
 
-.section-page-footer {
+.section-page-footer{
     background-color:var(--footer-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-left: 215px;
 }
+
+
 
 .footer-logo {
     font-family: Raleway, sans-serif;
@@ -582,10 +583,9 @@ ul {
     line-height: 1,19;
     letter-spacing: 0.03em;
     text-decoration: none;
-
     display: block;
     font-size: 26px;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 }
 
 
@@ -600,19 +600,8 @@ ul {
 
 .footer-item {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 9px;
 }
-
-
-.adress {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1,71;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-}
-
 
 .link-adress-footer {
     font-style: normal;
@@ -643,6 +632,11 @@ ul {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);   
 }
+.container-footer {
+    display: flex;
+    align-items: baseline;
+
+}
 
 /* join */
 
@@ -663,39 +657,23 @@ ul {
 }
 
 .join-list {
-    list-style: none;
+    display: flex;
     padding: 0;
     margin: 0;
     gap: 10px;
 }
 
 .social-item {
-    display: inline-block;
-}
-
-.social-links{
+    border-radius: 50%;
     background-color: var(--social-icon-join);
 }
 
 .social-icon-join {
-    fill: var(--accent-color-logo);
+    fill:var(--accent-color-logo);
 }
 
 
 /* Portfolio */
-
-.root {
-    --title-text-color: #212121;
-    --accent-color:#2196F3;
-    --logo-style-color:#000000;
-    --accent-color-logo:#FFFFFF;
-    --border-color:#ECECEC;
-    --button-active-background-color:#F5F4FA;
-    --button-active-secondary-color:#188CE8;
-    --secondary-text-color:#757575;
-    --footer-background-color:#2F303A;
-   
-}
 
 
 /* цвет основного текста #212121 */
@@ -853,6 +831,11 @@ ul {
     margin-bottom: 30px;
 }
 
+.portfolio-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
 .portfolio-item:nth-child(3n) {
     margin-right: 0;
 }
@@ -863,10 +846,6 @@ ul {
     border: 1px solid #EEEEEE;
 }
 
-.portfolio-box:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}   
-
 
 .section-title {
     color: var(--title-text-color);
@@ -876,6 +855,7 @@ ul {
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
+    margin-top: 20px;
 }
 
 .section-description {
